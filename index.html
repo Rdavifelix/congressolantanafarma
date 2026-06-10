@@ -1466,6 +1466,14 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
     background: linear-gradient(90deg, transparent, rgba(0,200,230,0.6), transparent);
     margin: 0 auto 28px; animation: fadeIn 1s .3s ease both;
   }
+  .hero-headline {
+    font-size: clamp(32px, 4.5vw, 62px); font-weight: 800;
+    color: #fff; line-height: 1.15;
+    max-width: 760px; margin: 0 auto 20px;
+    animation: fadeInUp 1s .3s ease both; letter-spacing: -.5px;
+    text-align: center;
+  }
+  .hero-headline .hero-hl { color: var(--cyan); }
   .hero-tagline {
     font-size: clamp(16px, 2vw, 21px); font-weight: 500;
     color: rgba(255,255,255,0.88); line-height: 1.65;
@@ -2070,13 +2078,12 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
       <div class="hero-divider"></div>
 
       <!-- Tagline -->
-      <p class="hero-tagline">
-        Dois dias de atualização científica para transformar<br>sua forma de conduzir o paciente
-      </p>
+      <h1 class="hero-headline">O congresso que vai <span class="hero-hl">impulsionar</span><br>sua carreira na área da saúde</h1>
+      <p class="hero-tagline">Garanta o seu lugar no principal encontro de Minas Gerais<br>e ganhe bônus exclusivos da edição</p>
 
       <!-- CTA -->
       <div class="hero-btn-group">
-        <a href="#ingressos" class="btn-hero-primary">Inscreva-se agora</a>
+        <a href="#ingressos" class="btn-hero-primary">Garantir meu Ingresso</a>
         <div class="hero-vagas">⚡ Vagas Limitadas</div>
       </div>
 
