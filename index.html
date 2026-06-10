@@ -2005,6 +2005,36 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
   .dicas-modal-box::-webkit-scrollbar-track{background:transparent;}
   .dicas-modal-box::-webkit-scrollbar-thumb{background:rgba(0,198,224,0.3);border-radius:4px;}
   .nav-dicas-btn{background:linear-gradient(90deg,#17CBCA,rgba(7,37,68,0.9)) !important;padding:6px 14px !important;border-radius:6px;color:#fff !important;font-weight:700 !important;font-size:13px !important;}
+  /* ─── MOTIVOS GRID ─── */
+  .motivo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .motivo-card {
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,119,182,0.10);
+    transition: transform .3s, box-shadow .3s;
+  }
+  .motivo-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,119,182,0.18); }
+  .motivo-card-img {
+    width: 100%; height: 200px;
+    object-fit: cover; display: block;
+  }
+  .motivo-card-body { padding: 18px 20px 22px; }
+  .motivo-card-title {
+    font-size: 16px; font-weight: 700; color: var(--blue);
+    margin-bottom: 8px; line-height: 1.3;
+  }
+  .motivo-card-sub {
+    font-size: 13px; color: #4A6885; line-height: 1.7;
+  }
+  @media (max-width: 900px) { .motivo-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .motivo-grid { grid-template-columns: 1fr; } .motivo-card-img { height: 180px; } }
+
 </style>
 </head>
 <body>
@@ -2959,95 +2989,56 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
     <div class="tag reveal">Muito além do conteúdo!</div>
     <h3 class="section-title reveal" style="font-size:clamp(24px,3vw,38px);">Uma experiência <span class="grad-text">completa</span></h3>
 
-    <div class="dif-grid">
-      <div class="dif-card reveal">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="3" y="3" width="21" height="14" rx="2" stroke="white" stroke-width="2" fill="none"/>
-      <line x1="3" y1="10" x2="24" y2="10" stroke="white" stroke-width="1.5"/>
-      <line x1="13.5" y1="17" x2="13.5" y2="21" stroke="white" stroke-width="2"/>
-      <line x1="8" y1="21" x2="19" y2="21" stroke="white" stroke-width="2"/>
-      <circle cx="27" cy="6" r="3" stroke="white" stroke-width="1.5" fill="none"/>
-      <path d="M24 13 Q27 11 30 13" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="27" cy="24" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <path d="M24 30 Q27 28 30 30" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="7" cy="26" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="14" cy="26" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="21" cy="26" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-    </svg></div>
-        <div class="dif-title">Palestras Científicas</div>
-        <div class="dif-desc">Com especialistas reconhecidos e líderes da área de saúde funcional integrativa</div>
+    <div class="motivo-grid">
+
+      <div class="motivo-card reveal">
+        <img src="images/motivo-networking.jpg" class="motivo-card-img" alt="Networking" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Potencial de Networking</div>
+          <div class="motivo-card-sub">Crie conexões poderosas com futuros parceiros de negócio, profissão ou até seu futuro melhor amigo da vida.</div>
+        </div>
       </div>
-      <div class="dif-card reveal reveal-delay-1">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 12 L8 6 H26 L30 12" stroke="white" stroke-width="2" fill="none"/>
-      <path d="M4 12 Q8 8 12 12 Q16 8 20 12 Q24 8 28 12 Q30 16 30 12" stroke="white" stroke-width="1.5" fill="none"/>
-      <rect x="4" y="12" width="26" height="17" rx="1" stroke="white" stroke-width="2" fill="none"/>
-      <rect x="12" y="18" width="10" height="11" rx="1" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="10" cy="18" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="24" cy="18" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="17" cy="16" r="2" stroke="white" stroke-width="1.5" fill="none"/>
-    </svg></div>
-        <div class="dif-title">Feira de Negócios</div>
-        <div class="dif-desc">Mais de 25 marcas do mercado magistral em um único espaço de conexões</div>
+
+      <div class="motivo-card reveal reveal-delay-1">
+        <img src="images/motivo-tendencias.jpg" class="motivo-card-img" alt="Tendências" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Tendência de Mercado</div>
+          <div class="motivo-card-sub">Presencie antes do restante do mercado o que vai explodir no nicho da saúde e aplique primeiro.</div>
+        </div>
       </div>
-      <div class="dif-card reveal reveal-delay-2">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="17" cy="17" r="3" stroke="white" stroke-width="2" fill="none"/>
-      <circle cx="6" cy="8" r="3" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="28" cy="8" r="3" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="6" cy="26" r="3" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="28" cy="26" r="3" stroke="white" stroke-width="1.5" fill="none"/>
-      <line x1="9" y1="10" x2="14.5" y2="15" stroke="white" stroke-width="1.5"/>
-      <line x1="25" y1="10" x2="19.5" y2="15" stroke="white" stroke-width="1.5"/>
-      <line x1="9" y1="24" x2="14.5" y2="19" stroke="white" stroke-width="1.5"/>
-      <line x1="25" y1="24" x2="19.5" y2="19" stroke="white" stroke-width="1.5"/>
-    </svg></div>
-        <div class="dif-title">Networking Qualificado</div>
-        <div class="dif-desc">Troca real com profissionais de todo o Brasil que levam a prática clínica a sério</div>
+
+      <div class="motivo-card reveal reveal-delay-2">
+        <img src="images/motivo-estandes.jpg" class="motivo-card-img" alt="Estandes" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Visite os Estandes</div>
+          <div class="motivo-card-sub">Quem não gosta de 100 amostrinhas novas pra levar pra casa e postar sobre? Esse é o seu momento.</div>
+        </div>
       </div>
-      <div class="dif-card reveal reveal-delay-1">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 3 Q11 1 10 -1" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" transform="translate(0 6)"/>
-      <path d="M17 3 Q18 1 17 -1" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" transform="translate(0 6)"/>
-      <path d="M24 3 Q25 1 24 -1" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" transform="translate(0 6)"/>
-      <path d="M5 14 H25 L22 27 H8 Z" stroke="white" stroke-width="2" fill="none"/>
-      <path d="M25 17 Q31 17 31 22 Q31 27 25 27" stroke="white" stroke-width="2" fill="none"/>
-      <line x1="4" y1="30" x2="30" y2="30" stroke="white" stroke-width="2" stroke-linecap="round"/>
-    </svg></div>
-        <div class="dif-title">Coffee Break Funcional</div>
-        <div class="dif-desc">Zero glúten, zero lactose e zero açúcar. Alimentação alinhada ao propósito do evento</div>
+
+      <div class="motivo-card reveal">
+        <img src="images/motivo-delicias.jpg" class="motivo-card-img" alt="Coffee Break" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Coffee Break Saboroso</div>
+          <div class="motivo-card-sub">Conheça novas delícias Fit e mantenha a rotina saudável mesmo durante o evento.</div>
+        </div>
       </div>
-      <div class="dif-card reveal reveal-delay-2">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="17" cy="17" r="3.5" stroke="white" stroke-width="2" fill="none"/>
-      <circle cx="7" cy="10" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="27" cy="10" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="7" cy="24" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="27" cy="24" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="17" cy="4" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <circle cx="17" cy="30" r="2.5" stroke="white" stroke-width="1.5" fill="none"/>
-      <line x1="9.5" y1="11.5" x2="14" y2="14.5" stroke="white" stroke-width="1.2"/>
-      <line x1="24.5" y1="11.5" x2="20" y2="14.5" stroke="white" stroke-width="1.2"/>
-      <line x1="9.5" y1="22.5" x2="14" y2="19.5" stroke="white" stroke-width="1.2"/>
-      <line x1="24.5" y1="22.5" x2="20" y2="19.5" stroke="white" stroke-width="1.2"/>
-      <line x1="17" y1="6.5" x2="17" y2="13.5" stroke="white" stroke-width="1.2"/>
-      <line x1="17" y1="27.5" x2="17" y2="20.5" stroke="white" stroke-width="1.2"/>
-    </svg></div>
-        <div class="dif-title">Ambiente de Troca Real</div>
-        <div class="dif-desc">Pensado para conexão, atualização genuína e evolução profissional</div>
+
+      <div class="motivo-card reveal reveal-delay-1">
+        <img src="images/motivo-marcas.jpg" class="motivo-card-img" alt="Marcas" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Contato com as Maiores Marcas</div>
+          <div class="motivo-card-sub">Tenha acesso de perto do que as maiores marcas de nutrição e medicina vêm trazendo ao mercado.</div>
+        </div>
       </div>
-      <div class="dif-card reveal reveal-delay-3">
-        <div class="dif-icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="3" y="4" width="22" height="26" rx="2" stroke="white" stroke-width="2" fill="none"/>
-      <line x1="8" y1="12" x2="20" y2="12" stroke="white" stroke-width="1.5"/>
-      <line x1="8" y1="17" x2="20" y2="17" stroke="white" stroke-width="1.5"/>
-      <line x1="8" y1="22" x2="14" y2="22" stroke="white" stroke-width="1.5"/>
-      <circle cx="27" cy="26" r="5" stroke="white" stroke-width="1.5" fill="none"/>
-      <path d="M24.5 26 L26.2 27.8 L29.5 24.2" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-    </svg></div>
-        <div class="dif-title">Certificado Digital</div>
-        <div class="dif-desc">Certificado enviado ao e-mail em até 15 dias após o evento, mediante check-in presencial</div>
+
+      <div class="motivo-card reveal reveal-delay-2">
+        <img src="images/motivo-experiencia.jpg" class="motivo-card-img" alt="Experiência" loading="lazy">
+        <div class="motivo-card-body">
+          <div class="motivo-card-title">Experiência Única</div>
+          <div class="motivo-card-sub">Quem vive essa experiência uma vez não para mais. Essa é sua chance de evoluir pro próximo nível da prática na nutrição.</div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
