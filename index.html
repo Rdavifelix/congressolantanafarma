@@ -2525,22 +2525,17 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
           </button>
         </div>
       </div>
-      <div class="spk-card reveal reveal-delay-3" style="opacity:0.42">
+      <div class="spk-card reveal reveal-delay-3">
         <div class="spk-card-img-wrap">
-          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="rgba(0,198,224,0.18)" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          </div>
+          <img src="images/humberto-nicastro.jpg" class="spk-card-img" loading="lazy" alt="Humberto Nicastro">
           <div class="spk-card-glow"></div>
         </div>
         <div class="spk-card-info">
-          <div class="spk-card-name" style="color:rgba(255,255,255,0.28)">Em Breve</div>
-          <div class="spk-card-role" style="color:rgba(255,255,255,0.17)">Palestrante a confirmar</div>
-          <div class="spk-card-topic" style="color:rgba(255,255,255,0.2)">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" stroke="rgba(0,198,224,0.18)" stroke-width="1.5"/></svg>
-            A confirmar
-          </div>
-          <button class="spk-card-btn" disabled style="opacity:0.22;cursor:not-allowed;">
-            Em breve
+          <div class="spk-card-name">Humberto Nicastro</div>
+          <div class="spk-card-role">Nutricionista, professor e pesquisador</div>
+          <button class="spk-card-btn" onclick="openModal('humberto_nicastro')">
+            Ver currículo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
         </div>
       </div>
@@ -2835,6 +2830,30 @@ src="https://www.facebook.com/tr?id=1402568987107769&ev=PageView&noscript=1"
           <div class="spk-modal-role">Nutrólogo &amp; Especialista em Metabolismo e Fitoterapia</div>
           <div class="spk-modal-divider"></div>
           <p class="spk-modal-bio">Pós-graduado em Nutrologia pela ABRAN (2018), Fisiologia do Exercício pela UNIFESP (2019) e Nutrição e Metabolismo pela USP (2019), com capacitação em emagrecimento pela Harvard Medical School, possui formação sólida voltada ao metabolismo, composição corporal e estratégias nutricionais baseadas em evidência científica. Especializou-se ainda em Medicina Ortomolecular e Fórmulas Magistrais pela FAPES (2023), ampliando sua atuação em terapias nutricionais individualizadas e suporte metabólico de precisão. Atualmente é pós-graduando em Fitoterapia pela UFSCar (2025), com foco na aplicação clínica de ativos naturais e abordagens integrativas para promoção da saúde e equilíbrio do organismo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spk-modal" id="modal-humberto_nicastro" onclick="closeModalOutside(event, 'humberto_nicastro')">
+    <div class="spk-modal-box">
+      <button class="spk-modal-close" onclick="closeModal('humberto_nicastro')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="spk-modal-inner">
+        <div class="spk-modal-photo">
+          <img src="images/humberto-nicastro.jpg" alt="Humberto Nicastro" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="spk-modal-content">
+          <h3 class="spk-modal-name">Humberto Nicastro</h3>
+          <div class="spk-modal-role">Nutricionista, professor e pesquisador</div>
+          <div class="spk-modal-divider"></div>
+          <ul class="spk-modal-bio" style="list-style:disc;padding-left:20px;margin:0;">
+            <li style="margin-bottom:10px;">Mais de 15 anos de experiência clínica</li>
+            <li style="margin-bottom:10px;">Autor de mais de 40 publicações científicas</li>
+            <li style="margin-bottom:10px;">Consultor técnico na indústria de suplementos nutricionais</li>
+            <li>Sócio e coordenador do departamento de nutrição da CareClub</li>
+          </ul>
         </div>
       </div>
     </div>
